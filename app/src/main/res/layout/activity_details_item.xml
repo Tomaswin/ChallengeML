@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/flipperid"
+        android:background="@drawable/border"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="left"
+        android:flipInterval="4000"
+        android:elevation="5dp">
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/soldquantity"
+        android:layout_toRightOf="@+id/flipperid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soldquantity"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/availablequantity"
+        android:layout_toRightOf="@+id/flipperid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/availablequantity"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/flipperid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/title"
+        android:textSize="17sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/flipperid" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/description"
+        android:textSize="17sp"
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/flipperid" />
+
+
+</RelativeLayout>

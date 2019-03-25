@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Challenge</string>
+    <string name="meli_app_id">8622926541515611</string>
+    <string name="meli_redirect_uri">https://google.com</string>
+
+    <string name="hint_search">Search item</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_logout">Login</string>
+</resources>
